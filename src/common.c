@@ -467,7 +467,7 @@ my_mkcol2(char* uri, int depth)
 			printf("ne_mkcol failed\n");
 			return;
 		}
-		# Return error if myuri + "sub/" is > 128
+		/* Return error if myuri + "sub/" is > 128 */
 		if (strlen(myuri) >= sizeof(myuri) - 4) {
 			printf("\nERROR: max depth reached.\n");	
 			exit(1);
